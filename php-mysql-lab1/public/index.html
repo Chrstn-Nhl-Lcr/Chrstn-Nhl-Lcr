@@ -1,0 +1,28 @@
+<!-- index.html
+     Purpose: Shows a simple form that posts to insert.php to add a user. -->
+     <!DOCTYPE html>
+     <html>
+     <head>
+       <meta charset="utf-8">
+       <title>PHP ⇄ MySQL Lab (Form)</title>
+       <link rel="stylesheet" href="style.css">
+     </head>
+     <body>
+       <h1>Add a User</h1>
+     
+       <form action="../app/insert.php" method="post">
+         <label>Full name</label>
+         <input type="text" name="full_name" placeholder="e.g., Juan Dela Cruz" required>
+     
+         <label>Email</label>
+         <input type="email" name="email" placeholder="e.g., juan@example.com" required>
+     
+         <button type="submit">Save</button>
+       </form>
+     
+       <p><a href="list.php">View Users</a></p>
+     </body>
+     </html>
+     
+   
+        
