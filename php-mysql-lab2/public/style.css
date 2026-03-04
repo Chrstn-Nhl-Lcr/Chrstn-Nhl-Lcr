@@ -1,0 +1,46 @@
+/* style.css - minimal readable styles */
+body {
+    font-family:system-ui,Arial,sans-serif;
+    max-width:900px;
+    margin:2rem auto;
+    padding:0 1rem
+}
+h1 {
+    margin:.25rem 0 .75rem
+}
+h3 {
+    margin:1.25rem 0 .25rem
+}
+form {
+    display:grid;
+    gap:.5rem;
+    margin:1rem 0
+}
+input,select,button {
+    padding:.6rem .8rem
+}
+table {
+    width:100%;
+    border-collapse:collapse;
+    margin-top:1rem
+}
+th,td {
+    border:1px solid #ddd;
+    padding:.6rem;
+    text-align:left;
+    vertical-align:top
+}
+.actions {
+    display:flex;
+    gap:.5rem
+}
+a.btn,button.btn {
+    padding:.4rem .6rem;
+    border:1px solid #ccc;
+    background:#f7f7f7;
+    text-decoration:none;
+    cursor:pointer
+}
+a {
+    text-decoration:none
+}

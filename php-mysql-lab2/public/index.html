@@ -1,0 +1,63 @@
+<!-- index.html - Add a new user (Create) -->
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>CRUD Lab – Add User</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Add a User</h1>
+
+  <form action="../app/insert.php" method="post">
+    <h3>Name</h3>
+    <label>First name *</label>
+    <input type="text" name="first_name" placeholder="e.g., Juan" required>
+
+    <label>Middle name (optional)</label>
+    <input type="text" name="middle_name" placeholder="e.g., Santos">
+
+    <label>Last name *</label>
+    <input type="text" name="last_name" placeholder="e.g., Dela Cruz" required>
+
+    <label>Suffix (optional)</label>
+    <input type="text" name="suffix" placeholder="e.g., Jr., III">
+
+    <h3>Contact</h3>
+    <label>Email *</label>
+    <input type="email" name="email" placeholder="e.g., juan@example.com" required>
+
+    <label>Phone (optional, PH 09xxxxxxxxx)</label>
+    <input type="text" name="phone" placeholder="e.g., 09171234567">
+
+    <h3>Other Details (optional)</h3>
+    <label>Gender</label>
+    <select name="gender">
+      <option value="">-- Select --</option>
+      <option>Male</option>
+      <option>Female</option>
+      <option>Prefer not to say</option>
+    </select>
+
+    <label>Birthdate</label>
+    <input type="date" name="birthdate">
+
+    <h3>Address (optional)</h3>
+    <label>Barangay</label>
+    <input type="text" name="barangay" placeholder="e.g., Poblacion">
+
+    <label>City/Municipality</label>
+    <input type="text" name="city_municipality" placeholder="e.g., Bulan">
+
+    <label>Province</label>
+    <input type="text" name="province" placeholder="e.g., Sorsogon">
+
+    <label>Postal Code</label>
+    <input type="text" name="postal_code" placeholder="e.g., 4706">
+
+    <button type="submit" class="btn">Save</button>
+  </form>
+
+  <p><a class="btn" href="list.php">View Users</a></p>
+</body>
+</html>
